@@ -1,0 +1,88 @@
+body {
+    background-color: #808080;
+    max-width: 1920px;
+}
+
+p {
+    color: #CCCCCC;
+}
+
+.footer {
+    border-top: 3px solid #CCCCCC;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    max-width: 1920px;
+}
+
+.left {
+    grid-area: left;
+    word-wrap: break-word;
+    margin: 20px;
+}
+
+.right {
+    grid-area: right;
+    word-wrap: break-word;
+    margin: 20px;
+    margin-right: 10px;
+}
+
+main {
+    display: grid;
+    grid-template-areas: 'left left right';
+    min-height: 200px;
+    height: 60%;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 1500px) {
+    main {
+        grid-template-areas: 'left' 'right';
+    }
+}
+
+.imageholder {
+    background-image: url("../images/banner.PNG");
+    height: 300px;
+    max-width: 1920px;
+}
+
+.cardalign {
+    margin-left: 80%;
+}
+
+@media only screen and (max-width: 1500px) {
+    .cardalign {
+        margin-left: 10%;
+    }
+    .imageholder {
+        background-image: url("../images/banner.PNG");
+        height: inherit;
+        max-width: 1920px;
+    }
+}
+
+hr {
+    background-color: #CCCCCC;
+}
+
+h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+p {
+    font-family: 'Be Vietnam', sans-serif;
+    border: 0px;
+}
+
+li:hover {
+    border-bottom: 2px solid #EEEEEE;
+}
+
