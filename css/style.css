@@ -86,3 +86,22 @@ li:hover {
     border-bottom: 2px solid #EEEEEE;
 }
 
+.leftvideoarea {            /*where the description goes*/
+    width: 30%;
+    background-color: #222222;
+    color: #222222;
+    height: 300px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 1px solid black;
+}
+
+.rightvideoarea {            /*where the video info goes goes*/
+    width: 70%;
+    background-color: #222222;
+    color: #222222;
+    height: 300px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 2px solid white;
+}
