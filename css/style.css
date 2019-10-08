@@ -1,5 +1,5 @@
 body {
-    background-color: #808080;
+    background-color: #EEEEEE;
     max-width: 1920px;
 }
 
@@ -94,8 +94,8 @@ li:hover {
     grid-gap: 10px;
     width: 100%;
     color: #CCCCCC;
-    background-color: #222222;
-    border: 2px solid #808080;
+    background-color: #808080;
+    border: 2px solid black;
 }
 
 .leftvideoarea {
@@ -133,7 +133,7 @@ li:hover {
 }
 
 .form-container {
-    background-color: #EEEEEE;
+    background-color: #808080;
     color: #222222;
     width: 50%;
     margin-top: 40px;
@@ -142,12 +142,12 @@ li:hover {
     height: 600px;
     padding: 30px;
     text-align: center;
-    border-radius:25px;
+    border-radius: 25px;
 }
 
 @media only screen and (max-width: 1500px) {
     .form-container {
-        background-color: #EEEEEE;
+        background-color: #808080;
         color: #222222;
         width: 96%;
         margin-left: 2%;
