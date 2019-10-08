@@ -88,21 +88,22 @@ li:hover {
 
 .videoarea {
     /*container for video and description*/
+    margin-left: 10%;
+    margin-right:10%;
     display: grid;
     grid-template-areas: 'left right';
     height: 60%;
     grid-gap: 10px;
-    width: 100%;
+    width: 80%;
     color: #CCCCCC;
     background-color: #808080;
-    border: 2px solid black;
 }
 
 .leftvideoarea {
     /*where the video goes*/
     grid-area: left;
     word-wrap: break-word;
-    width: 50%;
+    width: 70%;
     color: #CCCCCC;
     height: 300px;
 }
@@ -111,7 +112,7 @@ li:hover {
     /*where the video goes*/
     grid-area: right;
     word-wrap: break-word;
-    width: 50%;
+    width: 30%;
     color: #CCCCCC;
     height: 300px;
 }
