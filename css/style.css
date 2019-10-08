@@ -86,22 +86,50 @@ li:hover {
     border-bottom: 2px solid #EEEEEE;
 }
 
-.leftvideoarea {            /*where the description goes*/
-    width: 30%;
+.videoarea {
+    /*container for video and description*/
+    display: grid;
+    grid-template-areas: 'left right';
+    height: 60%;
+    grid-gap: 10px;
+    width: 100%;
+    color: #CCCCCC;
     background-color: #222222;
-    color: #222222;
-    height: 300px;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
-    border: 1px solid black;
+   
 }
 
-.rightvideoarea {            /*where the video info goes goes*/
-    width: 70%;
-    background-color: #222222;
-    color: #222222;
+.leftvideoarea {
+    /*where the video goes*/
+    grid-area: left;
+    word-wrap: break-word;
+    width: 50%;
+    float: left;
+    color: #CCCCCC;
+    background-color: red;
     height: 300px;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
-    border: 2px solid white;
+   
+}
+
+.rightvideoarea {
+    /*where the video goes*/
+    grid-area: right;
+    word-wrap: break-word;
+    float: left;
+    width: 50%;
+    color: #CCCCCC;
+    background-color: blue;
+    height: 150px;
+}
+/*make the video area responsive*/
+@media only screen and (max-width: 1500px) {
+    .videoarea {
+        grid-template-areas: 'left' 'right';
+        width: 100%;
+    }
+    .leftvideoarea{
+        width: 100%;
+    }
+    .rightvideoarea{
+        width:100%;
+    }
 }
