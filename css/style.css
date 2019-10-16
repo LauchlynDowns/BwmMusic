@@ -1,11 +1,9 @@
 body {
-    background-color: #808080;
+    background-color: #EEEEEE;
     max-width: 1920px;
 }
 
-p {
-    color: #CCCCCC;
-}
+/*css for sticky footer*/
 
 .footer {
     border-top: 3px solid #CCCCCC;
@@ -19,6 +17,8 @@ p {
     text-align: center;
     max-width: 1920px;
 }
+
+/*css for grid areas*/
 
 .left {
     grid-area: left;
@@ -42,17 +42,23 @@ main {
     padding: 10px;
 }
 
+/*grid area responsive css*/
+
 @media only screen and (max-width: 1500px) {
     main {
         grid-template-areas: 'left' 'right';
     }
 }
 
+/*home page image container*/
+
 .imageholder {
     background-image: url("../images/banner.PNG");
     height: 300px;
     max-width: 1920px;
 }
+
+/*make the band info section go to the right*/
 
 .cardalign {
     margin-left: 80%;
@@ -69,9 +75,13 @@ main {
     }
 }
 
+/*hr for contact list on home page*/
+
 hr {
     background-color: #CCCCCC;
 }
+
+/*font styling*/
 
 h1 {
     font-family: 'Source Sans Pro', sans-serif;
@@ -79,29 +89,186 @@ h1 {
 
 p {
     font-family: 'Be Vietnam', sans-serif;
-    border: 0px;
+    color: #CCCCCC;
 }
 
-li:hover {
-    border-bottom: 2px solid #EEEEEE;
+.videoarea {
+    /*container for video and description*/
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-areas: 'left right';
+    height: 60%;
+    grid-gap: 10px;
+    width: 80%;
+    color: #CCCCCC;
+    background-color: #808080;
+    border-radius: 40px;
 }
 
-.leftvideoarea {            /*where the description goes*/
-    width: 30%;
-    background-color: #222222;
-    color: #222222;
-    height: 300px;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
-    border: 1px solid black;
-}
-
-.rightvideoarea {            /*where the video info goes goes*/
+.leftvideoarea {
+    /*where the video goes*/
+    grid-area: left;
+    word-wrap: break-word;
     width: 70%;
-    background-color: #222222;
-    color: #222222;
+    color: #CCCCCC;
     height: 300px;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
-    border: 2px solid white;
+}
+
+.rightvideoarea {
+    /*where the video goes*/
+    grid-area: right;
+    word-wrap: break-word;
+    width: 30%;
+    color: #CCCCCC;
+    height: 300px;
+}
+
+/*make the video area responsive*/
+
+@media only screen and (max-width: 1500px) {
+    .videoarea {
+        grid-template-areas: 'left' 'right';
+        border-bottom: 2px solid #808080;
+    }
+    .leftvideoarea {
+        width: 100%;
+    }
+    .rightvideoarea {
+        width: 100%;
+        height: 150px;
+    }
+}
+
+/*containers for forms*/
+
+.form-container {
+    background-color: #808080;
+    color: #222222;
+    width: 50%;
+    margin-top: 40px;
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 600px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+/*make the form responsive*/
+
+@media only screen and (max-width: 1500px) {
+    .form-container {
+        background-color: #808080;
+        color: #222222;
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 20px;
+        height: 600px;
+        padding: 10px;
+    }
+}
+
+.back-link-container {
+    background-color: #808080;
+    color: #222222;
+    width: 90%;
+    margin-top: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 600px;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.link-container {
+    background-color: blue;
+    border: 0px;
+    border-radius: 30px;
+    width: 25%;
+    margin: 0px;
+    height: 300px;
+}
+
+.linkgrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 300px;
+    width: 100%;
+}
+
+.facebook {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: #3b5998;
+    border-radius: 40px;
+    width: 300px;
+    height: 300px;
+    border-top: 30%;
+    border-bottom: 30%;
+}
+
+.instagram {
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: red;
+    border-radius: 40px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.spotify {
+    grid-area: 1 / 3 / 2 / 4;
+    background-color: black;
+    border-radius: 40px;
+    width: 300px;
+    height: 300px;
+}
+
+.twitter {
+    grid-area: 1 / 4 / 2 / 5;
+    background-color: #1da1f2;
+    border-radius: 40px;
+    width: 300px;
+    height: 300px;
+}
+
+/*responsive link area*/
+
+@media only screen and (max-width: 1500px) {
+    .linkgrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    .facebook {
+        grid-area: 1 / 1 / 2 / 2;
+        margin-bottom: 40px;
+    }
+    .instagram {
+        grid-area: 2 / 1 / 3 / 2;
+        margin-bottom: 40px;
+    }
+    .spotify {
+        grid-area: 3 / 1 / 4 / 2;
+        margin-bottom: 40px;
+    }
+    .twitter {
+        grid-area: 4 / 1 / 5 / 2;
+        margin-bottom: 200px;
+    }
+    .back-link-container {
+        background-color: #808080;
+        color: #222222;
+        width: 80%;
+        margin-top: 40px;
+        margin-left: 10%;
+        margin-right: 10%;
+        height: 1600px;
+        border-radius: 20px;
+    }
 }
