@@ -14,8 +14,20 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/1f43bf7f5a.js" crossorigin="anonymous"></script>
     <link rel="icon" href="images/favicon.png" type="image/svg" sizes="16x16">
-
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#linkitem1, #linkitem2, #linkitem3, #linkitem4").hover(function () {
+                $(this).css("border", "8px solid gray");
+            }, function () {
+                $(this).css("border", "0");
+            });
+        });
+
+    </script>
+
+
 </head>
 
 <body>
@@ -56,30 +68,27 @@
             </ul>
         </div>
     </nav>
-
-
     <!--area to hold the links-->
     <div class="back-link-container">
         <h1>Connect with our social media accounts</h1>
         <br><br><br>
         <div class="linkgrid">
-            <div class="facebook">
+            <div id="linkitem1" class="facebook">
                 <a href="https://www.facebook.com/"> <i style="margin:10%;font-size: 16em; color: white;"
                         class="fab fa-facebook-f"></i></a>
-
-
             </div>
-            <div class="instagram">
+
+            <div id="linkitem2" class="instagram">
                 <a href="https://www.instagram.com/"><img style="margin:10%;" alt="instagram"
                         src="images/instagram-logo.svg" width="250px"></a>
             </div>
-            <div class="spotify">
+
+            <div id="linkitem3" class="spotify">
                 <a href="https://www.spotify.com/"><img style="margin:10%;" alt="spotify" src="images/spotify-logo.png"
                         width="250px"></a>
-
-
             </div>
-            <div class="twitter">
+
+            <div id="linkitem4" class="twitter">
                 <a href="https://www.twitter.com/"><img style="margin:10%;" alt="twitter" src="images/twitter-logo.svg"
                         width="250px"></a>
             </div>
@@ -89,7 +98,7 @@
     </div>
 
     <footer>
-        <div class="footer">
+        <div id="footer" class="footer">
             <img src="images/logo-dark.svg" alt="our logo" style="margin-bottom:10px; margin-top: 10px;" height="40">
             <p>Phone: 02354 34614&nbsp;&nbsp;&nbsp;&nbsp;Email: BWM@gmail.com</p>
         </div>
