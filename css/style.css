@@ -147,7 +147,7 @@ p {
     background-color: #616161;
     color: #222222;
     width: 500px;
-    height: 600px;
+    height: 700;
     padding: 30px;
     text-align: center;
     border-radius: 25px;
@@ -163,7 +163,7 @@ p {
         margin-left: 2%;
         margin-right: 2%;
         margin-top: 20px;
-        height: 600px;
+        height: 700;
         padding: 10px;
     }
 }
@@ -197,7 +197,7 @@ p {
     height: 300px;
     width: 100%;
 }
-
+/*icons for social media page*/
 .facebook {
     grid-area: 1 / 1 / 2 / 2;
     background-color: #3b5998;
@@ -292,25 +292,87 @@ p {
     #social-icons {
         display: block;
     }
-    /* show it on small screens */
+    /*Hide it on small screens*/
 }
 
 @media screen and (max-width: 1500px) {
     #social-icons {
         display: none;
     }
-    /* hide it elsewhere */
+/* hide it on small screens */
 }
 
-.maparea {
-    text-align: center;
-    margin-left: 35%;
-    margin-right: 35%;
+/*css for contact page*/
+.contact-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: inherit;
+    width: 100%;
 }
+
+.contact-item {
+    width: 80%;
+    margin: 10%;
+    font-size: 30px;
+    text-align: left;
+}
+
+/*make the contact page responsive*/
 
 @media screen and (max-width: 1500px) {
-    .maparea {
-        margin-left: 0%;
-        margin-right: 0%;
+    .contact-container {
+        display: grid;
+        grid-template-columns: 100%;
+        background-color: inherit;
+        width: 100%;
+    }
+    .mapouter {
+        position: relative;
+        text-align: right;
+        height: 300px;
+        width: 300px;
+    }
+    .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        height: 300px;
+        width: 300px;
+        border-radius: 30px;
     }
 }
+.comingsoon {
+    background-color: #616161;
+    width: 90%;
+    height: 250px;
+    margin: 5%;
+    margin-top: 5%;
+    border-radius: 30px;
+    overflow: auto;
+}
+.comingsoonimage{
+    width: 30%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    height: 250px;
+    float: left;
+}
+
+/*css for custom scroll bar
+(only works on chrome)
+*/
+
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgb(82, 82, 82); 
+  }
+ 
+  ::-webkit-scrollbar-thumb {
+    background:darkgray; 
+    border-radius: 30px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(148, 148, 148); 
+  }

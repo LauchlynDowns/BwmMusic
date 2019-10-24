@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <title>Contact US</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap" rel="stylesheet">
-    <title>BWM MUSIC</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Lauchlyn Downs">
+    <meta name="keywords" content="BWM, BWMMUSIC, music, good music">
+    <meta name="description" content="Music managers">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -16,7 +17,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="javascript/scripts.js"></script>
-      
+
 </head>
 
 <body>
@@ -42,7 +43,7 @@
                 </li>
                 <li id="3" class="nav-item" style="margin-right: 20px;">
                     <a class="nav-link" href="links.html">
-                        <p id="link3" >Links</p>
+                        <p id="link3">Links</p>
                     </a>
                 </li>
                 <li id="4" class="nav-item" style="margin-right: 20px;">
@@ -58,6 +59,7 @@
             </ul>
         </div>
         <div id="social-icons">
+            <!--icons at the top of the page-->
             <span style="font-size:30px; margin-right: 20px;" class="navbar-text">
                 <a href="https://www.facebook.com"><i id="facebooklink" class="fab fa-facebook"></i></a> <a
                     href="https://www.instagram.com"><i id="instagramlink" class="fab fa-instagram"></i></a> <a
@@ -66,67 +68,50 @@
     </nav>
     </div>
     </nav>
-    <br><br>
+    <div class="contact-container">
+        <div class="contact-item">
+            <h1 style="color: #CCCCCC;">Our Location</h1>
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="500" height="500" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=city%20of%20glasgow%20college&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+            </div>
+            <a
+                href="https://www.google.com/maps/dir//COGC+address/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4888441e1797b92f:0xec2975632e67711c?sa=X&ved=2ahUKEwjJ-KKL07TlAhWRSsAKHUWQAfMQ9RcwEXoECAcQEw">
+                <p>190 Cathedral St, Glasgow G4 0RF</p>
+            </a>
+        </div>
 
-
-
-    <div class="maparea">
-        <table>
-            <tbody>
-                <tr>
-                    <td>
-                        <h1 style="color: #CCCCCC;">Our head office</h1>
-                        <div class="mapouter">
-                            <div class="gmap_canvas"><iframe width="500" height="500" id="gmap_canvas"
-                                    src="https://maps.google.com/maps?q=city%20of%20glasgow%20college&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
-                        </div>
-                        <br><br>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h1 style="color:#cccccc;">Contact Form</h1>
-                        <div class="form-container" style="border-bottom: 50px;">
-                            <form class="contactform">
-                                <div class="form-group">
-
-                                    <label style="color:white;">Your Name</label>
-                                    <input style="border-radius: 30px; border: 2px solid white;" type="text" name="Name"
-                                        required class="form-control" placeholder="Full Name">
-                                    <br>
-                                    <label style="color:white;">Email address</label>
-                                    <input style="border-radius: 30px; border: 2px solid white;" type="email"
-                                        name="Email" required class="form-control" placeholder="Your Email Address">
-                                    <br>
-                                    <label style="color:white;">Reason for contacting us</label>
-                                    <input style="border-radius: 30px; border: 2px solid white;" type="text"
-                                        name="reason" required class="form-control" placeholder="reason">
-                                    <br>
-                                    <label style="color:white;">Your query/comment</label>
-                                    <textarea style="border-radius: 30px; border: 2px solid white;" name="query"
-                                        required class="form-control" placeholder="Your Query" rows="3"></textarea>
-                                    <br>
-                                    <button style="border-radius: 30px; border: 2px solid white; width: 100%;"
-                                        style="width: 400px;" type="submit"
-                                        class="btn btn-outline-light">Submit</button>
-                            </form>
-                        </div>
+        <div class="contact-item">
+            <h1 style="color: #CCCCCC;">Use this form to contact us</h1>
+            <div class="form-container">
+                <form class="contactform">
+                    <div class="form-group">
+                        <label style="color:white;">Your Name</label>
+                        <input style="border-radius: 30px; border: 2px solid white;" type="text" name="Name" required
+                            class="form-control" placeholder="Full Name">
+                        <br>
+                        <label style="color:white;">Email address</label>
+                        <input style="border-radius: 30px; border: 2px solid white;" type="email" name="Email" required
+                            class="form-control" placeholder="Your Email Address">
+                        <br>
+                        <label style="color:white;">Reason for contacting us</label>
+                        <input style="border-radius: 30px; border: 2px solid white;" type="text" name="reason" required
+                            class="form-control" placeholder="reason">
+                        <br>
+                        <label style="color:white;">Your query/comment</label>
+                        <textarea style="border-radius: 30px; border: 2px solid white;" name="query" required
+                            class="form-control" placeholder="Your Query" rows="3"></textarea>
+                        <br>
+                        <button style="border-radius: 30px; border: 2px solid white; width: 100%;" style="width: 400px;"
+                            type="submit" class="btn btn-outline-light">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <p>We will try to reply in 2-4 days</p>
+        </div>
     </div>
-    </td>
-    </tr>
-    </tbody>
-    </table>
-    </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br>
-
-
-
-
-
-
-
-
+    <br><br><br><br><br><br><br><br>
     <footer>
         <div class="footer">
             <img src="images/logo-dark.svg" alt="our logo" style="margin-bottom:10px; margin-top: 10px;" height="40">
@@ -134,3 +119,5 @@
         </div>
     </footer>
 </body>
+
+</html>
