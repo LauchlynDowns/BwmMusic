@@ -1,6 +1,5 @@
 body {
     background-color: rgb(82, 82, 82);
-    max-width: 1920px;
 }
 
 /*css for sticky footer*/
@@ -15,7 +14,6 @@ body {
     background-color: #222222;
     color: white;
     text-align: center;
-    max-width: 1920px;
 }
 
 /*css for grid areas on home page*/
@@ -55,7 +53,7 @@ main {
 .imageholder {
     background-image: url("../images/banner.PNG");
     height: 300px;
-    max-width: 1920px;
+    background-repeat: no-repeat;
 }
 
 /*make the band info section go to the right*/
@@ -355,6 +353,7 @@ p {
     border-bottom-left-radius: 30px;
     height: 250px;
     float: left;
+    background-repeat: no-repeat;
 }
 
 /*css for custom scroll bar
