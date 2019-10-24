@@ -1,6 +1,5 @@
 body {
-    background-color: #EEEEEE;
-    max-width: 1920px;
+    background-color: rgb(82, 82, 82);
 }
 
 /*css for sticky footer*/
@@ -15,10 +14,9 @@ body {
     background-color: #222222;
     color: white;
     text-align: center;
-    max-width: 1920px;
 }
 
-/*css for grid areas*/
+/*css for grid areas on home page*/
 
 .left {
     grid-area: left;
@@ -42,7 +40,7 @@ main {
     padding: 10px;
 }
 
-/*grid area responsive css*/
+/*grid area responsive css on home page*/
 
 @media only screen and (max-width: 1500px) {
     main {
@@ -50,12 +48,12 @@ main {
     }
 }
 
-/*home page image container*/
+/*home page banner image container*/
 
 .imageholder {
     background-image: url("../images/banner.PNG");
     height: 300px;
-    max-width: 1920px;
+    background-repeat: no-repeat;
 }
 
 /*make the band info section go to the right*/
@@ -94,15 +92,14 @@ p {
 
 .videoarea {
     /*container for video and description*/
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 40px;
+    margin-right: 40px;
     display: grid;
     grid-template-areas: 'left right';
     height: 60%;
     grid-gap: 10px;
-    width: 80%;
     color: #CCCCCC;
-    background-color: #808080;
+    background-color: #616161;
     border-radius: 40px;
 }
 
@@ -133,23 +130,22 @@ p {
     }
     .leftvideoarea {
         width: 100%;
+        text-align: center;
     }
     .rightvideoarea {
         width: 100%;
         height: 150px;
+        text-align: center;
     }
 }
 
 /*containers for forms*/
 
 .form-container {
-    background-color: #808080;
+    background-color: #616161;
     color: #222222;
-    width: 50%;
-    margin-top: 40px;
-    margin-left: 25%;
-    margin-right: 25%;
-    height: 600px;
+    width: 500px;
+    height: 700;
     padding: 30px;
     text-align: center;
     border-radius: 25px;
@@ -159,21 +155,20 @@ p {
 
 @media only screen and (max-width: 1500px) {
     .form-container {
-        background-color: #808080;
+        background-color: #616161;
         color: #222222;
         width: 96%;
         margin-left: 2%;
         margin-right: 2%;
         margin-top: 20px;
-        height: 600px;
+        height: 700;
         padding: 10px;
     }
 }
-/*css for links area on links*/
+
 .back-link-container {
-    background-color: #808080;
+    background-color: #616161;
     color: #222222;
-    width: 90%;
     margin-top: 40px;
     margin-left: 5%;
     margin-right: 5%;
@@ -200,7 +195,7 @@ p {
     height: 300px;
     width: 100%;
 }
-
+/*icons for social media page*/
 .facebook {
     grid-area: 1 / 1 / 2 / 2;
     background-color: #3b5998;
@@ -264,7 +259,6 @@ p {
     .back-link-container {
         background-color: #808080;
         color: #222222;
-        width: 80%;
         margin-top: 40px;
         margin-left: 10%;
         margin-right: 10%;
@@ -272,3 +266,112 @@ p {
         border-radius: 20px;
     }
 }
+
+/*stuff for map*/
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 500px;
+    width: 500px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 500px;
+    border-radius: 30px;
+}
+
+/*css for icons on navbar */
+
+@media screen and (max-width: 400px) {
+    #social-icons {
+        display: block;
+    }
+    /*Hide it on small screens*/
+}
+
+@media screen and (max-width: 1500px) {
+    #social-icons {
+        display: none;
+    }
+/* hide it on small screens */
+}
+
+/*css for contact page*/
+.contact-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: inherit;
+    width: 100%;
+}
+
+.contact-item {
+    width: 80%;
+    margin: 10%;
+    font-size: 30px;
+    text-align: left;
+}
+
+/*make the contact page responsive*/
+
+@media screen and (max-width: 1500px) {
+    .contact-container {
+        display: grid;
+        grid-template-columns: 100%;
+        background-color: inherit;
+        width: 100%;
+    }
+    .mapouter {
+        position: relative;
+        text-align: right;
+        height: 300px;
+        width: 300px;
+    }
+    .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        height: 300px;
+        width: 300px;
+        border-radius: 30px;
+    }
+}
+.comingsoon {
+    background-color: #616161;
+    width: 90%;
+    height: 250px;
+    margin: 5%;
+    margin-top: 5%;
+    border-radius: 30px;
+    overflow: auto;
+}
+.comingsoonimage{
+    width: 30%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    height: 250px;
+    float: left;
+    background-repeat: no-repeat;
+}
+
+/*css for custom scroll bar
+(only works on chrome)
+*/
+
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgb(82, 82, 82); 
+  }
+ 
+  ::-webkit-scrollbar-thumb {
+    background:darkgray; 
+    border-radius: 30px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(148, 148, 148); 
+  }

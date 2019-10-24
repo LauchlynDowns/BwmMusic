@@ -2,9 +2,11 @@
 <html lang="en">
 
 <head>
-    <title>BWM MUSIC</title>
+    <title>Coming Soon</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Lauchlyn Downs">
+    <meta name="keywords" content="BWM, BWMMUSIC, music, good music">
+    <meta name="description" content="Music managers">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -13,11 +15,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/1f43bf7f5a.js" crossorigin="anonymous"></script>
     <link rel="icon" href="images/favicon.png" type="image/svg" sizes="16x16">
-   
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="javascript/scripts.js"></script>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#222222; opacity: 0.8; height: 20%;  ">
+    <nav class="navbar navbar-expand-lg navbar-dark"
+        style="background-color:#222222; border-bottom:  2px solid #CCCCCC; opacity: 0.8; height: 20%;  ">
         <a class="navbar-brand" href="index.html"><img src="images/logo-dark.svg" alt="OUR LOGO" height="50"></a>
         <button style="border:0;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,39 +32,140 @@
             <ul class="navbar-nav">
                 <li id="1" class="nav-item active" style="margin-right: 20px;">
                     <a class="nav-link" href="index.html">
-                        <p>Home</p>
+                        <p id="link1">Home</p>
                     </a>
                 </li>
                 <li id="2" class="nav-item" style="margin-right: 20px;">
                     <a class="nav-link" href="comingsoon.html">
-                        <p>Coming Soon</p>
+                        <p id="link2">Coming Soon</p>
                     </a>
 
                 </li>
                 <li id="3" class="nav-item" style="margin-right: 20px;">
                     <a class="nav-link" href="links.html">
-                        <p>Links</p>
-                    </a>
-                </li>
+                        <p id="link3">Links</p>
+                    </a> </li>
                 <li id="4" class="nav-item" style="margin-right: 20px;">
                     <a class="nav-link" href="video.html">
-                        <p>Video</p>
+                        <p id="link4">Video</p>
                     </a>
                 </li>
                 <li id="5" class="nav-item" style="margin-right: 20px;">
                     <a class="nav-link" href="contact.html">
-                        <p>Contact</p>
+                        <p id="link5">Contact</p>
                     </a>
                 </li>
             </ul>
         </div>
+        <div id="social-icons">
+            <!--icons at the top of the page-->
+            <span style="font-size:30px; margin-right: 20px;" class="navbar-text">
+                <a href="https://www.facebook.com"><i id="facebooklink" class="fab fa-facebook"></i></a> <a
+                    href="https://www.instagram.com"><i id="instagramlink" class="fab fa-instagram"></i></a> <a
+                    href="https://www.twitter.com"><i id="twitterlink" class="fab fa-twitter"></i></a> <a
+                    href="https://www.spotify.com"><i id="spotifylink" class="fab fa-spotify"></i></a> </span>
+    </nav>
+    </div>
     </nav>
 
-
-<footer>
-    <div class="footer">
+    <div class="comingsoon">
+        <div class="comingsoonimage" style="background-image:url('images/guitar player.jpg');"></div>
+        <h1>Upcoming Music Event #1</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+        </p>
+        <p> Date: 02/12</p>
+        <button style="border-radius: 30px; border: 2px solid white; width: 120px;" type="submit"
+            class="btn btn-outline-light">BUY TICKETS</button>
+    </div>
+    <div class="comingsoon">
+        <div class="comingsoonimage" style="background-image:url('images/angry-musician.jpg');"></div>
+        <h1>Upcoming Music Event #2</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+        </p>
+        <p> Date: 02/12</p>
+        <button style="border-radius: 30px; border: 2px solid white; width: 120px;" type="submit"
+            class="btn btn-outline-light">BUY TICKETS</button>
+    </div>
+    <div class="comingsoon">
+        <div class="comingsoonimage" style="background-image:url('images/guitar player.jpg');"></div>
+        <h1>Upcoming Music Event #3</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.
+        </p>
+        <p> Date: 02/12</p>
+        <button style="border-radius: 30px; border-left: 20px; border: 2px solid white; width: 120px;" type="submit"
+            class="btn btn-outline-light">BUY TICKETS</button>
+    </div>
+    <div class="comingsoon">
+        <div class="comingsoonimage" style="background-image:url('images/guitar player.jpg');"></div>
+        <h1>Upcoming Music Event #3</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.
+        </p>
+        <p> Date: 02/12</p>
+        <button style="border-radius: 30px; border-left: 20px; border: 2px solid white; width: 120px;" type="submit"
+            class="btn btn-outline-light">BUY TICKETS</button>
+    </div>
+    <div class="comingsoon">
+        <div class="comingsoonimage" style="background-image:url('images/guitar player.jpg');"></div>
+        <h1>Upcoming Music Event #3</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.
+        </p>
+        <p> Date: 02/12</p>
+        <button style="border-radius: 30px; border-left: 20px; border: 2px solid white; width: 120px;" type="submit"
+            class="btn btn-outline-light">BUY TICKETS</button>
+    </div>
+    <div class="comingsoon">
+        <div class="comingsoonimage" style="background-image:url('images/guitar player.jpg');"></div>
+        <h1>Upcoming Music Event #3</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.
+        </p>
+        <p> Date: 02/12</p>
+        <button style="border-radius: 30px; border-left: 20px; border: 2px solid white; width: 120px;" type="submit"
+            class="btn btn-outline-light">BUY TICKETS</button>
+    </div>
+    <div class="comingsoon">
+        <div class="comingsoonimage" style="background-image:url('images/guitar player.jpg');"></div>
+        <h1>Upcoming Music Event #3</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.
+        </p>
+        <p>Date: 02/12</p><button style="border-radius: 30px; border-left: 20px; border: 2px solid white; width: 120px;" type="submit"
+            class="btn btn-outline-light">BUY TICKETS</button>
+    </div>
+    <div class="comingsoon">
+        <div class="comingsoonimage" style="background-image:url('images/guitar player.jpg');"></div>
+        <h1>Upcoming Music Event #3</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.
+        </p>
+        <p> Date: 02/12</p>
+        <button style="border-radius: 30px; border-left: 20px; border: 2px solid white; width: 120px;" type="submit"
+            class="btn btn-outline-light">BUY TICKETS</button>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <footer>
+        <div class="footer">
             <img src="images/logo-dark.svg" alt="our logo" style="margin-bottom:10px; margin-top: 10px;" height="40">
             <p>Phone: 02354 34614&nbsp;&nbsp;&nbsp;&nbsp;Email: BWM@gmail.com</p>
         </div>
     </footer>
-    </body>
+</body>
+
+</html>
