@@ -346,24 +346,23 @@ p {
         float: left;
         background-repeat: no-repeat;
     }
-   
-      
 }
 
 .comingsoon {
     background-color: #616161;
     width: 90%;
-    height:400px;
+    height: 250px;
     margin: 5%;
     margin-top: 5%;
     border-radius: 30px;
+    overflow: auto;
 }
 
 .comingsoonimage {
     width: 30%;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
-    height: 400px;
+    height: 250px;
     float: left;
     background-repeat: no-repeat;
 }
