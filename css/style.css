@@ -239,8 +239,10 @@ p {
     .linkgrid {
         display: grid;
         grid-template-columns: 1fr;
-        grid-column-gap: 0px;
+        grid-column-gap: 100px;
         grid-row-gap: 0px;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     .facebook {
         grid-area: 1 / 1 / 2 / 2;
